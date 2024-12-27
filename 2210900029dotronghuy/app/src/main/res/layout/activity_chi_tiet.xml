@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Layout chi tiết sản phẩm -->
+    <EditText
+        android:id="@+id/edtTenSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên sản phẩm"/>
+
+    <EditText
+        android:id="@+id/edtSoLuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số lượng"
+        android:layout_below="@id/edtTenSanPham"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/edtDonGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Đơn giá"
+        android:layout_below="@id/edtSoLuong"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnLuuSanPham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu sản phẩm"
+        android:layout_below="@id/edtDonGia"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thoát"
+        android:layout_below="@id/btnLuuSanPham"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
